@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+  @apply w-[100%];
+}
+
+.header-information-ac {
+  @apply flex justify-between items-center;
+  @apply bg-zinc-800 text-white;
+}
+
+.box-header-information-ac {
+  @apply flex items-center gap-4;
+}
+
+.nav-ac {
+  @apply flex justify-between items-center;
+  @apply bg-zinc-200 p-2 w-[100%];
+}
+
+.ul-container {
+  @apply flex gap-5 items-center;
+}
+
+.btn-ul {
+  @apply bg-blue-600 rounded-md p-1 text-white;
+}
+
+.section-init {
+  background-image: url(../assets/iconCursos/AlphaCursoBg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @apply h-[100vh] flex items-center p-2 justify-around
+}
+
+.container-logo {
+  transition: all 0.5s;
+}
+
+.container-logo:hover {
+  transform: scale(1.1);
+}
+
+.section-about {
+  @apply bg-zinc-200 flex justify-center flex-col
+}
+
+.container-section-about {
+  @apply w-[100%] flex justify-around gap-1 p-2 relative bottom-10
+}
+
+.box-section-about {
+  @apply bg-zinc-700 max-w-[300px] h-[300px] w-[100%] text-white flex text-center items-center rounded-md
+}
+
+.container-currents {
+  @apply flex justify-center
+}
+
+.container-box {
+  @apply grid grid-cols-4
+}
+
+.box {
+  @apply flex flex-col justify-center text-center m-5
+}
+
+.image {
+  transition: all 0.5s;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.container-box-parcerias {
+  @apply grid grid-cols-3
+}
+
+.section-contact {
+  @apply bg-zinc-800 p-4 flex justify-around
+}
+
+.form {
+  @apply max-w-[600px] text-white flex flex-col gap-2
+}
+
+.box-email-tel {
+  @apply flex gap-2
+}
+
+.input, textarea {
+  @apply w-[100%] bg-zinc-800;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+.btn-form {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.btn-mobile {
+  @apply hidden w-[100%]
+}
+
+@media screen and (max-width: 700px) {
+  .section-init {
+    background-image: url(../assets/iconCursos/AlphaCursoBg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @apply h-[100vh] flex items-center p-2 flex-col
+  }
+
+  .section-about {
+    @apply bg-zinc-200 flex justify-center
+  }
+
+  .container-section-about {
+    @apply w-[100%] flex items-center flex-col
+  }
+
+  .box-section-about {
+    @apply bg-zinc-700 max-w-[300px] h-[300px] w-[100%] text-white flex text-center items-center rounded-md
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-information-ac {
+    @apply hidden
+  }
+
+  .section-contact {
+    @apply flex flex-col gap-3
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-ac {
+    @apply flex flex-col gap-3;
+    @apply bg-zinc-200 p-2 w-[100%];
+  }
+
+  .container-logo {
+    @apply hidden
+  }
+
+  .container-box {
+    @apply grid grid-cols-2
+  }
+
+  .container-box-parcerias {
+    @apply grid grid-cols-2
+  }
+
+  .btn-ul {
+    @apply hidden
+  }
+  
+  .btn-mobile {
+    @apply block bg-blue-600 rounded-md p-1 text-white
+  }
+}
