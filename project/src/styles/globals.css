@@ -9,7 +9,7 @@ body {
   padding: 0%;
 }
 
-.header {
+.header-ac {
   @apply w-[100%];
 }
 
@@ -25,6 +25,10 @@ body {
 .nav-ac {
   @apply flex justify-between items-center;
   @apply bg-zinc-200 p-2 w-[100%];
+}
+
+.ul-nav-ac-mobile {
+  @apply hidden
 }
 
 .ul-container {
@@ -57,7 +61,7 @@ body {
 }
 
 .container-section-about {
-  @apply w-[100%] flex justify-around gap-1 p-2 relative bottom-10
+  @apply w-[100%] flex justify-around gap-1 p-2
 }
 
 .box-section-about {
@@ -148,6 +152,10 @@ body {
   .section-contact {
     @apply flex flex-col gap-3
   }
+
+  .ul-nav-ac-mobile {
+    @apply hidden
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -174,5 +182,13 @@ body {
   
   .btn-mobile {
     @apply block bg-blue-600 rounded-md p-1 text-white
+  }
+
+  .ul-nav-ac {
+    @apply hidden
+  }
+
+  .ul-nav-ac-mobile {
+    @apply block
   }
 }
