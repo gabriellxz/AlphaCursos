@@ -20,11 +20,15 @@ import ibyte from '@/assets/iconPatrocinadores/ibyte.jpg'
 import mercadoLivre from '@/assets/iconPatrocinadores/mercadoLivre.png'
 import oBoticario from '@/assets/iconPatrocinadores/oBoticario.png'
 import superR from '@/assets/iconPatrocinadores/superR.png'
+import { useState } from "react";
 
 export default function Home() {
+
+  const [aberto, setAberto] = useState(false)
+
   return (
     <>
-      <header className="header-ac">
+      <header className="header-ac fixed w-[100%]">
         <div className="header-information-ac px-1">
           <div className="box-header-information-ac">
             <IconMessageCirclePin />
@@ -72,6 +76,35 @@ export default function Home() {
             </ul>
           </div>
           <button className="btn-mobile">Matricula</button>
+
+          {/* NavBar mobile */}
+          <button className="btn-mobile" onClick={() => setAberto(!aberto)}>
+            Menu
+          </button>
+          {aberto &&
+            <div className="ul-nav-ac-mobile">
+              <ul className="ul-container-mobile">
+                <li>
+                  <a href="#inicio">Início</a>
+                </li>
+                <li>
+                  <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                  <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                  <a href="#parcerias">Parcerias</a>
+                </li>
+                <li>
+                  <a href="#contato">Contato</a>
+                </li>
+                <li>
+                  <button className="btn-ul w-[100%]">Matricula</button>
+                </li>
+              </ul>
+            </div>
+          }
         </nav>
       </header>
       <main>
