@@ -129,9 +129,7 @@ export default function Home() {
               <div>
                 <h2 className="text-2xl font-bold">Quem somos?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facilis itaque numquam reprehenderit.
-                  Saepe velit inventore pariatur consectetur iusto! Voluptates officia iste neque rerum qui perspiciatis
-                  inventore dolor delectus beatae.
+                  Somos uma empresa de cursos, afim de gerar pessoas especializadas em diversas áreas, para que elas criem seu próprio negócio ou, se qualificar em vagas de empregos
                 </p>
               </div>
             </div>
@@ -139,9 +137,7 @@ export default function Home() {
               <div>
                 <h2 className="text-2xl font-bold">Objetivos</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facilis itaque numquam reprehenderit.
-                  Saepe velit inventore pariatur consectetur iusto! Voluptates officia iste neque rerum qui perspiciatis
-                  inventore dolor delectus beatae.
+                  Nossa empresa surgiu a partir da necessidade de empregos em nossa região. Nossa ideia é gerar cursos para desenvolver micro empreendedor.
                 </p>
               </div>
             </div>
@@ -149,9 +145,7 @@ export default function Home() {
               <div>
                 <h2 className="text-2xl font-bold">Processo seletivo</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facilis itaque numquam reprehenderit.
-                  Saepe velit inventore pariatur consectetur iusto! Voluptates officia iste neque rerum qui perspiciatis
-                  inventore dolor delectus beatae.
+                  Cada curso é cobrado uma quantia justa, tendo em conta que você terá professores renomados, palestras, práticas e etc... Mas também existe a possibilidade de você conseguir uma bolsa através de uma entrevista.
                 </p>
               </div>
             </div>
